@@ -26,6 +26,13 @@ nav span {
   font-family: "Bungee", cursive;
 }
 
+main {
+  width: 90%;
+  display: flex;
+  top: 550px;
+  margin: auto;
+  position: relative;
+ } 
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
