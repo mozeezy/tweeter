@@ -27,8 +27,9 @@ nav span {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   top: 550px;
   margin: auto;
   position: relative;
