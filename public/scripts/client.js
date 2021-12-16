@@ -1,25 +1,35 @@
 $(document).ready(function () {
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+    const data = $('form').serialize();
+    console.log(data);
+    $.ajax ('/tweets', {method: 'POST', data: data})
+    .done (function () {console.log("Tweet submitted.")})
+
+
+  })
+
   // Fake data taken from initial-tweets.json
   const data = [
     {
       user: {
-        name: "Newton",
+        name: "Jotaro Kujo",
         avatars: "https://i.imgur.com/73hZDYK.png",
-        handle: "@SirIsaac",
+        handle: "@KujoJ",
       },
       content: {
-        text: "If I have seen further it is by standing on the shoulders of giants",
+        text: "STAR PLATINUM!!! ZA WARUDO",
       },
       created_at: 1461116232227,
     },
     {
       user: {
-        name: "Descartes",
+        name: "Josuke Higashikata",
         avatars: "https://i.imgur.com/nlhLi3I.png",
-        handle: "@rd",
+        handle: "@Josuke",
       },
       content: {
-        text: "Je pense , donc je suis",
+        text: "First tweet. GREATO!",
       },
       created_at: 1461113959088,
     },
@@ -63,23 +73,3 @@ $(document).ready(function () {
 
   renderTweets(data);
 });
-
-{
-  /* <article id="tweet">
-<header class="handle">
-  Jotaro Kujo
-  <div>@Jojo</div>
-</header>
-  <div class="content"> <b>STAR PLATINUM!!</b></div>
-<footer class="foot">
-  3 days ago
-  <div class="actions">
-    <i class="fas fa-flag"></i>
-    <i class="fas fa-retweet"></i>
-    <i class="fas fa-heart"></i>
-  </div>
-</footer>
-</article>
-</section>
-<div> */
-}
