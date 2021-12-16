@@ -5,8 +5,6 @@ $(document).ready(function () {
     console.log(data);
     $.ajax ('/tweets', {method: 'POST', data: data})
     .done (function () {console.log("Tweet submitted.")})
-
-
   })
 
   // Fake data taken from initial-tweets.json
@@ -35,15 +33,21 @@ $(document).ready(function () {
     },
   ];
 
+  
   const renderTweets = function (tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
     for (let post of tweets) {
       const newTweet = createTweetElement(post);
-      $("#tweets-container").append(newTweet);
+      $("#tweets-container").prepend(newTweet);
     }
   };
+  
+  const loadTweets = function () {
+    $.ajax('/tweets', {method: 'GET'})
+    .done(function (data){renderTweets(data)});
+  }
 
   const createTweetElement = function (tweet) {
     // create a new tweet using template literals
@@ -70,6 +74,5 @@ $(document).ready(function () {
 `;
     return $tweet;
   };
-
-  renderTweets(data);
+  loadTweets();
 });
