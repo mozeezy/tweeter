@@ -1,0 +1,35 @@
+#tweet {
+  border: 4px solid #545149;
+  padding: 1em;
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+#tweet:hover {
+  box-shadow: 5px 5px lightgrey;
+}
+
+.handle {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  border-bottom: solid 5px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #000000;
+  height: 30px;
+}
+.foot {
+  font-size: 20px;
+}
+
+.actions {
+  float: right;
+}
+
+article footer > div > i:hover {
+  color: goldenrod;
+}

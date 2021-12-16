@@ -1,16 +1,15 @@
 form {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
 }
-
 textarea {
   width: 100%;
   background: transparent;
   font-weight: bold;
   border: none;
   border-bottom: solid 5px;
-  margin-top: 1em;
+  margin-top: 0em;
   margin-bottom: 0.5em;
   color: #000000;
   height: 30px;
@@ -24,11 +23,16 @@ input {
 
 button {
   font-family: "Bungee", cursive, sans-serif;
-  color:white;
-  width: 80%;
+  color: white;
   background: #4056a1;
 }
 
 .counter {
   font-family: "Bungee", cursive, sans-serif;
+  bottom: 50px;
+}
+
+.tweet-character-count {
+  display: flex;
+  justify-content: space-between;
 }

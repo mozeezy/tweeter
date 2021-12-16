@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: #545149;
+  color: 	#854545;
   background-color: #f4f1ec;
   font-size: 24px;
 }
@@ -27,13 +27,20 @@ nav span {
 }
 
 main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  top: 550px;
+  top: 400px;
   margin: auto;
   position: relative;
- } 
+  width: 90%;
+}
+
+.text-tweet {
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 90%;
+  margin: auto;
+}
+
+/* MOVE BELOW TO TWEETS.CSS --> APPLY STYLING TO THE CHILDREN INSTEAD OF THE PARENT */
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

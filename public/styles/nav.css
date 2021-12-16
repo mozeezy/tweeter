@@ -1,26 +1,29 @@
-nav {
-  height: 120px;
-  width: 100%;
-  background-color: #4056a1;
-  color: #ffffff;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+.fixed-nav-bar { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%; 
+  height: 120px; 
+  background-color: 	#4e6c87; 
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding-left: 1.5em;
+  margin-bottom: 60px;
 }
+
+
 nav span {
   font-family: "Bungee", cursive;
 }
-nav.new-tweet {
+.new-tweet {
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  justify-content: space-between;
 }
 
 nav .fa-angle-double-down {
   color: red;
   margin-left: 3em;
 }
-
