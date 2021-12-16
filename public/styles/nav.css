@@ -10,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   padding-left: 1.5em;
-  margin-bottom: 60px;
+  padding-top: 40px;
+
 }
 
 
@@ -19,11 +20,15 @@ nav span {
 }
 .new-tweet {
   font-family: "Source Sans Pro", sans-serif;
+  padding-right: 1.5em;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 nav .fa-angle-double-down {
   color: red;
-  margin-left: 3em;
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-bottom: 20px;
 }

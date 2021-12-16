@@ -1,7 +1,11 @@
+.text-tweet {
+  padding-top: 5em;
+}
 form {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 1.5em;
 }
 textarea {
   width: 100%;
