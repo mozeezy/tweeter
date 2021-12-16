@@ -10,6 +10,12 @@
   box-shadow: 5px 5px lightgrey;
 }
 
+.handle > div {
+  color: 	#c5c5c5;
+}
+.handle > div:hover {
+  color: 	#7b3fb0;
+}
 .handle {
   color: grey;
   display: flex;
