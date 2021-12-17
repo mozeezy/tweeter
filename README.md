@@ -13,6 +13,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Tweeter Mobile Version"](https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-mobile.png)
 
+!["Fixed Nav Bar Feature"](https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-fixed-nav-bar.png)
+
 
 
 ## Getting Started
