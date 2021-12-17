@@ -1,56 +1,36 @@
 $(document).ready(function () {
   $("form").on("submit", function (event) {
     event.preventDefault();
-    const data = $('form').serialize();
-    console.log(data);
-    $.ajax ('/tweets', {method: 'POST', data: data})
-    .done (function () {console.log("Tweet submitted.")})
-  })
+    const data = $("form").serialize();
+    const length = $("textarea#tweet-text").val().length
 
-  // Fake data taken from initial-tweets.json
-  const data = [
-    {
-      user: {
-        name: "Jotaro Kujo",
-        avatars: "https://i.imgur.com/73hZDYK.png",
-        handle: "@KujoJ",
-      },
-      content: {
-        text: "STAR PLATINUM!!! ZA WARUDO",
-      },
-      created_at: 1461116232227,
-    },
-    {
-      user: {
-        name: "Josuke Higashikata",
-        avatars: "https://i.imgur.com/nlhLi3I.png",
-        handle: "@Josuke",
-      },
-      content: {
-        text: "First tweet. GREATO!",
-      },
-      created_at: 1461113959088,
-    },
-  ];
+    if (length> 140) {
+      return alert("Too many characters");
+    }
 
-  
+    if (!length) {
+      return alert("Your tweets are empty");
+    }
+    
+    $.ajax("/tweets", { method: "POST", data: data }).done(function () {
+      console.log("Tweet submitted.");
+    });
+  });
+
   const renderTweets = function (tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
     for (let post of tweets) {
       const newTweet = createTweetElement(post);
       $("#tweets-container").prepend(newTweet);
     }
   };
-  
+
   const loadTweets = function () {
-    $.ajax('/tweets', {method: 'GET'})
-    .done(function (data){renderTweets(data)});
-  }
+    $.ajax("/tweets", { method: "GET" }).done(function (data) {
+      renderTweets(data);
+    });
+  };
 
   const createTweetElement = function (tweet) {
-    // create a new tweet using template literals
     let $tweet = `<article id="tweet">
 <header class="handle">
 <div>
