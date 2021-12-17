@@ -9,8 +9,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Tweeter Desktop Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-desktop.png?raw=true)
-!["Tweeter Mobile Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-mobile.png?raw=true)
+!["Tweeter Desktop Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-desktop.png)
+!["Tweeter Mobile Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-mobile.png)
 
 
 
