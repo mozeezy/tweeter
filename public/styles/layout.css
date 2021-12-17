@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: 	#FAD30A;
+  color: #fad30a;
   background-color: #f4f1ec;
   font-size: 24px;
 }
@@ -24,8 +24,8 @@ main {
 .error {
   color: #880808;
   font-weight: bold;
-	background-color: transparent;
-  background-repeat:no-repeat;
+  background-color: transparent;
+  background-repeat: no-repeat;
   border-style: solid;
 }
 
@@ -36,7 +36,6 @@ main {
     top: 70px;
     right: 100px;
     padding-bottom: 50px;
-    
   }
 }
 
@@ -45,4 +44,3 @@ main {
     padding-bottom: 50px;
   }
 }
-

@@ -1,5 +1,5 @@
 #tweet {
-  border: 4px solid #480F7C;
+  border: 4px solid #480f7c;
   padding: 1em;
   width: 90%;
   margin-left: 80px;
@@ -7,21 +7,21 @@
 }
 
 #tweet:hover {
-  box-shadow: 5px 5px #480F7C;
+  box-shadow: 5px 5px #480f7c;
 }
 
 .handle > div > img {
   border-radius: 100px;
   border: 5px solid;
-  border-color: #480F7C;
+  border-color: #480f7c;
   background-color: blanchedalmond;
 }
 
 .handle > div {
-  color: 		#FAD30A;
+  color: #fad30a;
 }
 .handle > div:hover {
-  color: 	goldenrod;
+  color: goldenrod;
 }
 .handle {
   color: white;

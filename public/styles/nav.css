@@ -1,11 +1,11 @@
-.fixed-nav-bar { 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  z-index: 9999; 
-  width: 100%; 
-  height: 120px; 
-  background-color:	#480F7C; 
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 120px;
+  background-color: #480f7c;
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   color: white;
   display: flex;
@@ -30,14 +30,6 @@ nav span {
   justify-content: space-between;
 }
 
-.error {
-  color: #880808;
-  font-weight: bold;
-	background-color: transparent;
-  background-repeat:no-repeat;
-  border-style: solid;
-}
-
 nav .fa-angle-double-down {
   color: red;
   padding-top: 0px;
@@ -47,7 +39,7 @@ nav .fa-angle-double-down {
 
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   .fixed-nav-bar {
-    background-color: #480F7C;
+    background-color: #480f7c;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
   nav > img {

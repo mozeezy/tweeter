@@ -4,7 +4,7 @@
   top: 120px;
   left: 0;
   right: 0;
-  background-color: #480F7C;
+  background-color: #480f7c;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   text-align: center;
 }
@@ -17,9 +17,8 @@
 header > div > img {
   border-radius: 150px;
   border: solid 5px;
-  border-color: #D4D6CF;
-  background-color: #FAAE82;
-
+  border-color: #d4d6cf;
+  background-color: #faae82;
 }
 
 @media only screen and (min-width: 1024px) {

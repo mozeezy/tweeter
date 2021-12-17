@@ -1,25 +1,18 @@
 $(document).ready(function () {
-  $('.error').hide();
+  $(".error").hide();
   $("form").on("submit", function (event) {
     event.preventDefault();
-    $('.error').slideUp();
+    $(".error").slideUp();
     const data = $("form").serialize();
     const length = $("textarea#tweet-text").val().length;
 
     if (length > 140) {
-      $('.error')
-      .show()
-      $('.error')
-      .text("⚠️ Your tweet contains too many characters. ⚠️")
-    }
-
-    else if (!length) {
-      $('.error')
-      .show()
-      $('.error')
-      .text("⚠️ Your tweet is empty. ⚠️")
-    }
-    else {
+      $(".error").show();
+      $(".error").text("⚠️ Your tweet contains too many characters. ⚠️");
+    } else if (!length) {
+      $(".error").show();
+      $(".error").text("⚠️ Your tweet is empty. ⚠️");
+    } else {
       $.ajax("/tweets", { method: "POST", data: data }).done(function () {
         $("#tweets-container").empty();
         loadTweets();
