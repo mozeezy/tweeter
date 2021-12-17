@@ -1,5 +1,7 @@
 # Tweeter Project
 
+> WARNING: Developers of Tweeter classified the app as "high-class fun" and thus, are not liable for any damages. Please proceed at your own discretion. 
+
 Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
@@ -7,6 +9,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
+!["Tweeter-Desktop-Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-desktop.png?raw=true)
+!["Tweeter-Mobile-Version"] (https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-mobile.png?raw=true)
 
 
 
