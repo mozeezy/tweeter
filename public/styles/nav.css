@@ -26,6 +26,14 @@ nav span {
   justify-content: space-between;
 }
 
+.error {
+  color: #cc0000;
+  font-weight: bold;
+	background-color: transparent;
+  background-repeat:no-repeat;
+  border-style: solid;
+}
+
 nav .fa-angle-double-down {
   color: red;
   padding-top: 0px;
