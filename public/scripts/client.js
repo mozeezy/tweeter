@@ -11,12 +11,13 @@ $(document).ready(function () {
     if (!length) {
       return alert("Your tweets are empty");
     }
-    
+
     $.ajax("/tweets", { method: "POST", data: data }).done(function () {
-      console.log("Tweet submitted.");
+      $("#tweets-container").empty();
+      loadTweets();
     });
   });
-
+  
   const renderTweets = function (tweets) {
     for (let post of tweets) {
       const newTweet = createTweetElement(post);
