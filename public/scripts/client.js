@@ -2,9 +2,9 @@ $(document).ready(function () {
   $("form").on("submit", function (event) {
     event.preventDefault();
     const data = $("form").serialize();
-    const length = $("textarea#tweet-text").val().length
+    const length = $("textarea#tweet-text").val().length;
 
-    if (length> 140) {
+    if (length > 140) {
       return alert("Too many characters");
     }
 
@@ -17,7 +17,13 @@ $(document).ready(function () {
       loadTweets();
     });
   });
-  
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const renderTweets = function (tweets) {
     for (let post of tweets) {
       const newTweet = createTweetElement(post);
@@ -40,7 +46,7 @@ $(document).ready(function () {
 </div>  
   <div>${tweet.user.handle} </div>
   </header>
-    <div class="content"> <b> ${tweet.content.text} </b></div>
+    <div class="content"> <b> ${escape(tweet.content.text)} </b></div>
     <footer class="foot">
     <time> ${timeago.format(tweet["created_at"])} </time>
     <div class="actions">
