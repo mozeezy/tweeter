@@ -5,15 +5,19 @@
   z-index: 9999; 
   width: 100%; 
   height: 120px; 
-  background-color: 	#4e6c87; 
+  background-color:	#480F7C; 
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   color: white;
   display: flex;
   justify-content: space-between;
   padding-left: 1.5em;
   padding-top: 40px;
-
 }
 
+nav > img {
+  width: 40px;
+  height: 40px;
+}
 
 nav span {
   font-family: "Bungee", cursive;
@@ -27,7 +31,7 @@ nav span {
 }
 
 .error {
-  color: #cc0000;
+  color: #880808;
   font-weight: bold;
 	background-color: transparent;
   background-repeat:no-repeat;
@@ -39,4 +43,14 @@ nav .fa-angle-double-down {
   padding-top: 0px;
   padding-left: 90px;
   padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  .fixed-nav-bar {
+    background-color: #480F7C;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+  nav > img {
+    display: none;
+  }
 }

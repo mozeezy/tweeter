@@ -4,7 +4,7 @@
   top: 120px;
   left: 0;
   right: 0;
-  background-color: #4e6746;
+  background-color: #480F7C;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   text-align: center;
 }
@@ -12,4 +12,24 @@
 .avatar-header .name {
   font-size: 30px;
   color: white;
+}
+
+header > div > img {
+  border-radius: 150px;
+  border: solid 5px;
+  border-color: #D4D6CF;
+  background-color: #FAAE82;
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .avatar-header {
+    width: 33%;
+    margin-top: 100px;
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

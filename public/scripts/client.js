@@ -10,14 +10,14 @@ $(document).ready(function () {
       $('.error')
       .show()
       $('.error')
-      .text("Your tweet contains too many characters.")
+      .text("⚠️ Your tweet contains too many characters. ⚠️")
     }
 
     else if (!length) {
       $('.error')
       .show()
       $('.error')
-      .text("Your tweet is empty.")
+      .text("⚠️ Your tweet is empty. ⚠️")
     }
     else {
       $.ajax("/tweets", { method: "POST", data: data }).done(function () {

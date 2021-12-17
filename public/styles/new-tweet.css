@@ -1,5 +1,7 @@
 .text-tweet {
   padding-top: 5em;
+  width: 90%;
+  margin: auto;
 }
 form {
   display: flex;
@@ -12,17 +14,18 @@ textarea {
   background: transparent;
   font-weight: bold;
   border: none;
+  outline: none;
   border-bottom: solid 5px;
   margin-top: 0em;
   margin-bottom: 0.5em;
-  color: #000000;
-  height: 30px;
+  color: #CEADA1;
+  height: 45px;
 }
 
 input {
   font-family: "Bungee", cursive, sans-serif;
   background-color: #4056a1;
-  color: #ffffff;
+  color: #E5D4CE;
 }
 
 button {
