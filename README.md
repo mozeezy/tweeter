@@ -16,7 +16,6 @@ This repository is the starter code for the project: Students will fork and clon
 !["Fixed Nav Bar Feature"](https://github.com/mozeezy/tweeter/blob/master/docs/tweeter-fixed-nav-bar.png)
 
 
-
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

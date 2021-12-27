@@ -13,12 +13,19 @@ $(document).ready(function () {
       $(".error").show();
       $(".error").text("⚠️ Your tweet is empty. ⚠️");
     } else {
-      $.ajax("/tweets", { method: "POST", data: data }).done(function () {
+      $.ajax("/tweets", { method: "POST", data: data })
+      .done(function () {
         $("#tweets-container").empty();
         loadTweets();
+        refreshPage();
       });
     }
   });
+  const refreshPage = () => {
+    $('textarea').val('');
+    $('.counter').text(140);
+    loadNewTweet("/tweets", "GET", renderTweets);
+  };
 
   const escape = function (str) {
     let div = document.createElement("div");
